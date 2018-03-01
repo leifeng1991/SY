@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_line_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="行号"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/id_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="124"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/id_start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="114"
+            android:gravity="center"
+            android:text="开始时间"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/id_end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="114"
+            android:gravity="center"
+            android:text="结束时间"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/id_cashier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="114"
+            android:gravity="center"
+            android:text="收银员"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/id_cash_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="114"
+            android:gravity="center"
+            android:text="现金总额"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/id_total_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="全部总额"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/id_total_orders"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="114"
+            android:gravity="center"
+            android:text="总订单数"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b4b4b4" />
+</LinearLayout>

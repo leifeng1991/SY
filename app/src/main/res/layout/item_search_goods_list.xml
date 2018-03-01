@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFE3E3E3">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#FFB4B4B4" />
+
+    <LinearLayout
+        android:id="@+id/id_check_all_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="97"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/id_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="选择"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/id_check_image"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_check_normal"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_line_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="93"
+        android:gravity="center"
+        android:text="行号"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_product_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="259"
+        android:gravity="center"
+        android:text="货品名称"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_no"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="184"
+        android:gravity="center"
+        android:text="货号"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="142"
+        android:gravity="center"
+        android:text="单价"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#FFB4B4B4" />
+</LinearLayout>

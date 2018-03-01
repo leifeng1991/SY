@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/id_shade"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_equipment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="设备编号：10001"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="2017-12-05  15:30:00"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="3dp"
+        app:contentPadding="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/id_account"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_rectangle_stroke_787878"
+                android:drawableLeft="@mipmap/ic_user_name"
+                android:drawablePadding="25dp"
+                android:hint="请输入您的账号"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="#FFC8C8C8"
+                android:textSize="@dimen/text_size_18" />
+
+            <EditText
+                android:id="@+id/id_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_rectangle_stroke_787878"
+                android:drawableLeft="@mipmap/ic_user_password"
+                android:drawablePadding="25dp"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#FFC8C8C8"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/id_login_error_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@mipmap/ic_exclamation_point"
+                android:drawablePadding="10dp"
+                android:text="账号或密码错误"
+                android:textColor="#FFFF725C"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/id_login"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/shape_rectangle_radius_e7e7e7"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

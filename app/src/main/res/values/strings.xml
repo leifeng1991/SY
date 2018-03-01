@@ -1,0 +1,55 @@
+<resources>
+    <string name="word">我</string>
+    <string-array name="orderType">
+        <item>全部</item>
+        <item>普通订单 </item>
+        <item>团购订单</item>
+    </string-array>
+    <string-array name="orderState1">
+        <item>全部</item>
+        <item>待发货</item>
+        <item>配送中</item>
+        <item>已完成</item>
+        <item>已退款</item>
+    </string-array>
+    <string-array name="orderState2">
+        <item>待发货</item>
+        <item>配送中</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="orderState3">
+        <item>已退款</item>
+    </string-array>
+    <string-array name="liuShuiType">
+        <item>全部</item>
+        <item>消费</item>
+        <item>退款</item>
+    </string-array>
+    <string-array name="payType">
+        <item>全部</item>
+        <item>支付宝</item>
+        <item>微信</item>
+        <item>现金</item>
+    </string-array>
+    <string-array name="payType1">
+        <item>全部</item>
+        <item>支付宝</item>
+        <item>微信</item>
+    </string-array>
+    <string-array name="goodsType">
+        <item>全部</item>
+        <item>标品</item>
+        <item>非标品</item>
+    </string-array>
+    <string-array name="syncType">
+        <item>全部</item>
+        <item>未上传</item>
+        <item>已上传</item>
+        <item>无库存</item>
+    </string-array>
+    <string-array name="psType">
+        <item>全部</item>
+        <item>兆邻配送</item>
+        <item>门店自提</item>
+    </string-array>
+</resources>

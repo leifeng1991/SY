@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/id_shade"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_equipment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="设备编号：10001"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="2017-12-05  15:30:00"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="3dp"
+        app:contentPadding="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/id_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_rectangle_stroke_787878"
+                android:drawableLeft="@mipmap/ic_user_password"
+                android:drawablePadding="25dp"
+                android:hint="请输入初始化密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#FFC8C8C8"
+                android:textSize="@dimen/text_size_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_gan_tan_hao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="初始化收银设备须校核密码，请相关人员对密码保密，以免数据丢失、泄漏。"
+                    android:textColor="#FFC8C8C8"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_sure"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/shape_rectangle_radius_ff725c"
+                android:text="确  认"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

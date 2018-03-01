@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="964dp"
+    android:layout_height="683dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_f7f8fc_16"
+                android:gravity="center_vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:drawableLeft="@mipmap/ic_cashier_check"
+                    android:drawablePadding="20dp"
+                    android:text="收银对账"
+                    android:textColor="#FFFF725C"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/id_back"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_stroke_b4b4b4"
+                    android:text="返回"
+                    android:textColor="#FF4F4F4F"
+                    android:textSize="@dimen/text_size_18" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#b4b4b4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_store_name"
+                        style="@style/duiZhangTextView" />
+
+                    <TextView
+                        android:id="@+id/id_pos_number"
+                        style="@style/duiZhangTextView" />
+
+                    <TextView
+                        android:id="@+id/id_cashier_number"
+                        style="@style/duiZhangTextView"/>
+
+                    <TextView
+                        android:id="@+id/id_cashier"
+                        style="@style/duiZhangTextView" />
+
+                    <TextView
+                        android:id="@+id/id_reconciliation_date"
+                        style="@style/duiZhangTextView" />
+
+                    <TextView
+                        android:id="@+id/id_start_time"
+                        style="@style/duiZhangTextView" />
+
+                    <TextView
+                        android:id="@+id/id_end_time"
+                        style="@style/duiZhangTextView" />
+
+                    <TextView
+                        android:id="@+id/id_first_time"
+                        style="@style/duiZhangTextView"/>
+
+                    <TextView
+                        android:id="@+id/id_last_time"
+                        style="@style/duiZhangTextView" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="243"
+                        android:background="@drawable/shape_stroke_b4b4b4_8"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="@drawable/shape_stroke_left_top" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#ebedf2"
+                                    android:text="微信" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#ebedf2"
+                                    android:text="支付宝" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="@drawable/shape_stroke_left_bottom"
+                                    android:text="现金" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#b4b4b4" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#ebedf2"
+                                    android:text="收款笔数" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_wx_receipt_number"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_zfb_receipt_number"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_cash_receipt_number"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#b4b4b4" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#ebedf2"
+                                    android:text="收款金额" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_wx_receivable_amount"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0.00" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_zfb_receivable_amount"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0.00" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_cash_receivable_amount"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0.00" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#b4b4b4" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#ebedf2"
+                                    android:text="退款笔数" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_wx_refund_number"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_zfb_refund_number"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_cash_refund_number"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#b4b4b4" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/duiZhangTextView1"
+                                    android:background="@drawable/shape_stroke_right_top"
+                                    android:text="退款金额" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_zfb_refund_amount"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0.00" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_wx_refund_amount"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="#f7f8fc"
+                                    android:text="0.00" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#b4b4b4" />
+
+                                <TextView
+                                    android:id="@+id/id_cash_refund_amount"
+                                    style="@style/duiZhangTextView1"
+                                    android:background="@drawable/shape_stroke_right_bottom"
+                                    android:text="0.00" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="183"
+                        android:background="@drawable/shape_rectangle_ff725c_8"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_stroke_left_top_ff725c"
+                                android:gravity="center"
+                                android:text="现金总额"
+                                android:textColor="#FFFF725C"
+                                android:textSize="@dimen/text_size_18" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#FFFF725C" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="#FFEAE2"
+                                android:gravity="center"
+                                android:text="全部总额"
+                                android:textColor="#FFFF725C"
+                                android:textSize="@dimen/text_size_18" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#FFFF725C" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_stroke_left_bottom_ff725c"
+                                android:gravity="center"
+                                android:text="总笔数"
+                                android:textColor="#FFFF725C"
+                                android:textSize="@dimen/text_size_18" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#FFFF725C" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/id_cash_total"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="#FFFF725C"
+                                android:textSize="@dimen/text_size_18" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#FFFF725C" />
+
+                            <TextView
+                                android:id="@+id/id_all_total"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="#FFFF725C"
+                                android:textSize="@dimen/text_size_18" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#FFFF725C" />
+
+                            <TextView
+                                android:id="@+id/id_total_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="#FFFF725C"
+                                android:textSize="@dimen/text_size_18" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <Button
+                    android:id="@+id/id_history"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/shape_rectangle_radius_f5a623"
+                    android:text="历史对账单"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="@dimen/text_size_20" />
+
+                <Button
+                    android:id="@+id/id_refresh"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/id_history"
+                    android:background="@drawable/shape_rectangle_radius_49c787"
+                    android:text="刷新"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="@dimen/text_size_20" />
+
+                <Button
+                    android:id="@+id/id_sure"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_rectangle_solid_ff725c"
+                    android:text="确认对账"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

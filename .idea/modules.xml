@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RongIMLib/RongIMLib.iml" filepath="$PROJECT_DIR$/RongIMLib/RongIMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SY.iml" filepath="$PROJECT_DIR$/SY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatwindow/floatwindow.iml" filepath="$PROJECT_DIR$/floatwindow/floatwindow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qcloud_wxyt/qcloud_wxyt.iml" filepath="$PROJECT_DIR$/qcloud_wxyt/qcloud_wxyt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

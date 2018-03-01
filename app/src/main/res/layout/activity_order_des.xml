@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F7F8FC" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/id_up_page"
+            android:layout_width="138dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_rectangle_stroke_b4b4b4"
+            android:text="上一页"
+            android:textColor="#FF444444"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消费订单"
+            android:textColor="#FF444444"
+            android:textSize="@dimen/text_size_30" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/id_print_order"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle_radius_49c787"
+                android:text="打印订单"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/id_tui_price"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_rectangle_solid_ff725c"
+                android:text="退款"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F7F8FC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="200dp"
+        android:paddingRight="200dp"
+        android:paddingTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_store_name"
+                    style="@style/OrderDesTextView1"
+                    android:layout_width="wrap_content"
+                    android:drawablePadding="5dp" />
+
+                <TextView
+                    android:id="@+id/id_pos_number"
+                    style="@style/OrderDesTextView1_6" />
+
+                <TextView
+                    android:id="@+id/id_pos_peopel_number"
+                    style="@style/OrderDesTextView1_6" />
+
+                <TextView
+                    android:id="@+id/id_time"
+                    style="@style/OrderDesTextView1_6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_order_number"
+                    style="@style/OrderDesTextView1" />
+
+                <TextView
+                    android:id="@+id/id_cashier_names"
+                    style="@style/OrderDesTextView1_6" />
+
+                <TextView
+                    android:id="@+id/id_ps_address"
+                    style="@style/OrderDesTextView1_6" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id_ps_info"
+                style="@style/OrderDesTextView1_6"
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/id_receivable_time"
+                style="@style/OrderDesTextView1_6"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/OrderDesTextView3"
+                android:text="商品名称" />
+
+            <TextView
+                style="@style/OrderDesTextView3"
+                android:text="单价" />
+
+            <TextView
+                style="@style/OrderDesTextView3"
+                android:text="数量" />
+
+            <TextView
+                style="@style/OrderDesTextView3"
+                android:text="小计" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_number"
+                    style="@style/OrderDesTextView1" />
+
+                <TextView
+                    android:id="@+id/id_discounts_price"
+                    style="@style/OrderDesTextView1" />
+
+                <TextView
+                    android:id="@+id/id_pay_type"
+                    style="@style/OrderDesTextView1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_total_price"
+                    style="@style/OrderDesTextView1" />
+
+                <TextView
+                    android:id="@+id/id_original_price"
+                    style="@style/OrderDesTextView1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

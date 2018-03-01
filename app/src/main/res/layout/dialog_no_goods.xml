@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="602dp"
+        android:layout_height="304dp"
+        android:background="@drawable/shape_rectangle_ffffff_16"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品条码"
+                android:textColor="#FF282828"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_code"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_rectangle_505050"
+                android:gravity="center_vertical"
+                android:hint="扫描商品条码"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#FF282828"
+                android:textColorHint="#FFBBBBBB"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="商品库无此商品！请检查货号/条码是否正确"
+            android:textColor="#FF282828"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_config"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_rectangle_ff725c_5"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

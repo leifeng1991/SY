@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_left_parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_entry_order_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="94"
+            android:gravity="center"
+            android:text="挂单号"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FFB4B4B4" />
+
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="179"
+            android:gravity="center"
+            android:text="操作时间"
+            android:textColor="#FF282828"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFB4B4B4" />
+</LinearLayout>

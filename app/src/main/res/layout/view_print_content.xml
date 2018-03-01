@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="兆邻便利店"
+            android:textColor="#FF444444"
+            android:textSize="38sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="1px"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/tv_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#FF444444"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="1px"
+                android:background="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期："
+                android:textColor="#FF444444"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_add_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单号："
+                android:textColor="#FF444444"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="************************************************************************"
+            android:textColor="#FF444444"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/printItemTextView"
+                android:layout_weight="156"
+                android:gravity="left"
+                android:text="品名" />
+
+            <TextView
+                style="@style/printItemTextView"
+                android:layout_weight="73"
+                android:text="单价" />
+
+            <TextView
+                style="@style/printItemTextView"
+                android:layout_weight="73"
+                android:text="数量" />
+
+            <TextView
+                style="@style/printItemTextView"
+                android:layout_weight="73"
+                android:text="小计" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="——————————————————————————————————————————"
+            android:textColor="#FF444444"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_all_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量：- -"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_all_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="件数：- -"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_discount_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="优惠金额：0.00"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_all_prices"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="合计：- -"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vg_all_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实付金额："
+                android:textColor="#FF444444"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_all_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="- -"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vg_pay_payment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_pay_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款："
+                android:textColor="#FF444444"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_pay_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="- -"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vg_zhaoling_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找零："
+                android:textColor="#FF444444"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_zhaoling_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="- -"
+                android:textColor="#FF444444"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="——————————————————————————————————————————"
+            android:textColor="#FF444444"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="请保管好购物凭证"
+            android:textColor="#FF444444"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="欢迎再次光临"
+            android:textColor="#FF444444"
+            android:textSize="34sp" />
+    </LinearLayout>
+</LinearLayout>

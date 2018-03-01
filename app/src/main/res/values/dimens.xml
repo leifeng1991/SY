@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vice_screen_left_width">790px</dimen>
+    <dimen name="float_order_width">78dp</dimen>
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="weightButton">125dp</dimen>
+</resources>

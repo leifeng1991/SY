@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="231dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp">
+
+            <TextView
+                style="@style/printBarcodeTitleTextView"
+                android:text="品名：" />
+
+            <TextView
+                android:id="@+id/tv_goods_title"
+                style="@style/printBarcodeValueTextView"
+                android:singleLine="true"
+                android:text="- -" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+
+            <TextView
+                style="@style/printBarcodeTitleTextView"
+                android:text="单价：" />
+
+            <TextView
+                android:id="@+id/tv_goods_price"
+                style="@style/printBarcodeValueTextView"
+                android:text="- -" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+
+            <TextView
+                style="@style/printBarcodeTitleTextView"
+                android:text="重量：" />
+
+            <TextView
+                android:id="@+id/tv_goods_weight"
+                style="@style/printBarcodeValueTextView"
+                android:text="- -" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+
+            <TextView
+                style="@style/printBarcodeTitleTextView"
+                android:text="价格：" />
+
+            <TextView
+                android:id="@+id/tv_goods_all_price"
+                style="@style/printBarcodeValueTextView"
+                android:text="- -" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_bar_code"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_bar_code_num"
+            style="@style/printBarcodeValueTextView"
+            android:layout_gravity="center_horizontal"
+            android:textScaleX="1.2"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

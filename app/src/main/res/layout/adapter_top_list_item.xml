@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="82dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_rectangle_stroke_b4b4b4"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="一级分类类类"
+        android:textColor="@color/text_4"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>

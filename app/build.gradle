@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+def loadProperties() {
+    Properties properties = new Properties()
+    File propertyFile = new File(rootDir.getAbsolutePath() + "/local.properties")
+    properties.load(propertyFile.newDataInputStream())
+    //第一次定义或者设置它的时候需要 ext 前缀,
+    gradle.ext.storeFile = properties.storeFile// 读local.properties这个的storeFile的值
+}
+// 加载版本信息
+loadProperties()
+// 定义是否是测试环境
+def isTest = true
+
+android {
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'zhaolin'
+            keyPassword '123456'
+            storeFile file(gradle.storeFile)
+            storePassword '123456'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion versions.compileSdkVersion
+
+    defaultConfig {
+        // 配置正测试环境
+        // 包名正测试配置
+        applicationId isTest ? "com.xxzlkj.zhaolinshouyin.test" : "com.xxzlkj.zhaolinshouyin"
+        // 应用名正测试配置
+        resValue "string", "app_name", isTest ? "兆邻收银测试" : "兆邻收银"
+        // 网络正测试配置
+        buildConfigField "boolean", "isTest", isTest ? "true" : "false"
+
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode versions.versionCode
+        versionName versions.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                // 融云正测试配置，后台都是用的正式的
+                RONG_CLOUD_APP_KEY_VALUE: "c9kqb3rdce88j",
+        ]
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.releaseConfig
+            // 默认的渠道
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
+        release {
+            signingConfig signingConfigs.releaseConfig
+
+            minifyEnabled false
+//            shrinkResources true //去除无用资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    greendao {
+        schemaVersion 3 //数据库版本号,如果更改实体/数据库模式，则必须增加此值
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // 依赖base库
+    implementation project(':base')
+    // 依赖融云
+    implementation project(':RongIMLib')
+    // 数据库操作
+    compile 'org.greenrobot:greendao:3.2.2'
+    // zxing
+    compile 'com.google.zxing:core:3.2.1'
+    // 悬浮窗口
+    implementation project(':floatwindow')
+    // 选择的dialog
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_goods_name"
+        style="@style/OrderDesTextView3"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/id_goods_price"
+        style="@style/OrderDesTextView3" />
+
+    <TextView
+        android:id="@+id/id_goods_number"
+        style="@style/OrderDesTextView3" />
+
+    <TextView
+        android:id="@+id/id_total"
+        style="@style/OrderDesTextView3" />
+</LinearLayout>

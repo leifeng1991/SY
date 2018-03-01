@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F8FC">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/id_last_page"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_rectangle_f7f8fc"
+            android:scaleType="center"
+            android:src="@mipmap/ic_gray_arrow_left"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="186dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_stroke_b4b4b4"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/id_input_order_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入商品货号"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="#FFCCCCCC"
+                android:textColorHint="#FFCCCCCC"
+                android:textSize="@dimen/text_size_16" />
+
+            <RelativeLayout
+                android:id="@+id/id_search"
+                android:layout_width="39dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/shape_stroke_ffeae2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_search_orange" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:text="标品／非标品"
+            android:textColor="#FF444444"
+            android:textSize="@dimen/text_size_18" />
+
+        <LinearLayout
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_stroke_b4b4b4"
+            android:padding="1dp">
+
+            <Spinner
+                android:id="@+id/id_product_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dropDownVerticalOffset="40dp"
+                android:dropDownWidth="113dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_f7f8fc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="置顶"
+                android:textColor="#FF444444"
+                android:textSize="@dimen/text_size_18" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="#B4B4B4"/>
+
+            <TextView
+                android:id="@+id/id_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="置底"
+                android:textColor="#FF444444"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_delete"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_rectangle_ff725c_5"
+            android:text="删除"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_18" />
+
+        <Button
+            android:id="@+id/id_add"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_rectangle_radius_49c787"
+            android:text="添加"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_goods_list" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

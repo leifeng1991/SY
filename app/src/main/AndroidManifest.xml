@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xxzlkj.zhaolinshouyin">
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <uses-permission android:name="android.hardware.usb.UsbAccessory" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".app.ZhaoLinApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- *******************************融云开始********************************** -->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="${RONG_CLOUD_APP_KEY_VALUE}" />
+        <!-- *******************************融云结束********************************** -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.InitStoreActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.SelectStoreActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.ShouYinActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.PayDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AcountCheckDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogActivity" />
+        <activity
+            android:name=".activity.OrderStatisticsDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogActivity" />
+        <activity
+            android:name=".activity.HistoryStatementDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogActivity" />
+        <activity
+            android:name=".activity.GoodsListActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.SearchGoodsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.CommonGoodsListActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.OrderDesActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.GoodsWeightActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.OrderRefundActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/OrderRefundAppTheme"/>
+        <activity
+            android:name=".activity.ReceiveOrderDialogActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/DialogActivity" />
+        <!-- 解决7.0 不能发送file:// -->
+        <provider
+            android:name=".provider.UpdateFileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <service android:name="net.posprinter.service.PosprinterService" />
+    </application>
+
+</manifest>

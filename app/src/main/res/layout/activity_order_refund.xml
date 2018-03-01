@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/id_up_page"
+            android:layout_width="138dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_rectangle_stroke_b4b4b4"
+            android:text="上一页"
+            android:textColor="#FF444444"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退款"
+            android:textColor="#FF444444"
+            android:textSize="@dimen/text_size_30" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/id_print_order"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle_radius_49c787"
+                android:text="打印订单"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/id_tui_price"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_rectangle_solid_ff725c"
+                android:text="退款"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F7F8FC" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/id_no_refund_goods_layout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="154dp"
+                    android:layout_height="154dp"
+                    android:src="@mipmap/ic_no_can_refund_goods" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:text="此订单无可退商品！"
+                    android:textColor="#FF3C3C3C"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.xxzlkj.zhaolinshare.base.MyRecyclerView
+                android:id="@+id/id_recycler_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.xxzlkj.zhaolinshare.base.MyRecyclerView
+                android:id="@+id/id_recycler_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFE3E3E3">
+
+        <ImageView
+            android:id="@+id/id_all_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="40dp"
+            android:paddingRight="23dp"
+            android:src="@mipmap/ic_check_normal" />
+
+        <TextView
+            android:id="@+id/id_all_checked_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_all_checked"
+            android:text="全选"
+            android:textColor="#FF282828"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/id_all_checked_text"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#FFB4B4B4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="退款方式："
+                android:textColor="#FF282828"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/id_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="23dp">
+
+                <RadioButton
+                    android:id="@+id/id_cash_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="现金"
+                    android:paddingHorizontal="23dp"
+                    android:textColor="#FF282828"
+                    android:textSize="18sp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/id_other_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:paddingHorizontal="23dp"
+                    android:text="支付宝"
+                    android:textColor="#FF282828"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="63dp"
+            android:layout_toLeftOf="@+id/id_sure"
+            android:gravity="center"
+            android:text="总计：0.00"
+            android:textColor="#FFFF725C"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_sure"
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FF725C"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

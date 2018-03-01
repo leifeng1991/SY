@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="2017-12-05  15:30:00"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/id_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textColor="#FF787878"
+        android:textSize="@dimen/text_size_32" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="40dp"
+        android:text="已开通门店："
+        android:textColor="#FF444444"
+        android:textSize="@dimen/text_size_32" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="108dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_init"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/shape_rectangle_radius_ff725c"
+        android:text="确  认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/shape_rectangle_ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:text="更新"
+            android:textColor="@color/orange_ff725c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/shape_rectangle_f5f6f8"
+            android:gravity="top"
+            android:padding="30dp"
+            android:text="asdfaf"
+            android:textColor="@color/text_67"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_no_forced_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_rectangle_stroke_ff725c_5"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/orange_ff725c"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_config"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_rectangle_ff725c_5"
+                android:gravity="center"
+                android:text="升级"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_forced_update"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_rectangle_ff725c_5"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_update_top" />
+</RelativeLayout>

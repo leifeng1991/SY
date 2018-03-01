@@ -1,0 +1,76 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="load_data_width">100dp</dimen>
+    <dimen name="line_width">2px</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="home_banner_width">330dp</dimen>
+    <dimen name="home_banner_page_margin">-12dp</dimen>
+    <dimen name="main_tab_height">49dp</dimen>
+    <dimen name="line_height_1">1dp</dimen>
+    <dimen name="dialog_order_width">270dp</dimen>
+    <dimen name="dialog_order_height">200dp</dimen>
+    <dimen name="toolbar_height">44dp</dimen>
+
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_23">23sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_27">27sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_35">35sp</dimen>
+    <dimen name="text_size_36">36sp</dimen>
+
+    <dimen name="icon_bank_height">39dp</dimen>
+    <dimen name="distance_window">15dp</dimen>
+    <dimen name="content_height">10dp</dimen>
+    <dimen name="progress_height">60dp</dimen>
+    <dimen name="recharge_withdrawal_width">140dp</dimen>
+    <dimen name="input_password_height">45dp</dimen>
+    <dimen name="input_phone_height">22dp</dimen>
+    <dimen name="corner_radius">20dp</dimen>
+    <dimen name="shadow_radius">5dp</dimen>
+    <dimen name="shadow_dy">3dp</dimen>
+    <dimen name="me_item_image_width">32dp</dimen>
+    <dimen name="me_item_image_width_margin_left">25dp</dimen>
+    <dimen name="me_item_image_margin_top">8dp</dimen>
+    <dimen name="me_item_text_margin_top">2dp</dimen>
+    <dimen name="me_item_text_margin_left">10dp</dimen>
+    <dimen name="me_item_height">80dp</dimen>
+    <dimen name="me_item_bottom_height">72dp</dimen>
+    <dimen name="classify_margin_top">36dp</dimen>
+    <dimen name="view_me_center_item_height">80dp</dimen>
+    <dimen name="view_me_center_height">127dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="home_line_margin">13dp</dimen>
+    <dimen name="guide_point_width">10dp</dimen>
+    <dimen name="guide_point_left_margin">10dp</dimen>
+    <dimen name="local_life_home_bottom">50dp</dimen>
+    <dimen name="item_coupons_margin">10dp</dimen>
+    <dimen name="bill_title_height">35dp</dimen>
+    <dimen name="home_tab_margin_top">67dp</dimen>
+    <dimen name="homeTitleHeight">69dp</dimen>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+</resources>

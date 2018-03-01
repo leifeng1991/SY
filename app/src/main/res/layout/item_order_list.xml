@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFE3E3E3">
+
+    <TextView
+        android:id="@+id/id_line_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="90"
+        android:gravity="center"
+        android:text="行号"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_order_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="253"
+        android:gravity="center"
+        android:text="订单号"
+        android:textColor="#FF0074FC"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_water_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="123"
+        android:gravity="center"
+        android:text="流水类型"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_order_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="123"
+        android:gravity="center"
+        android:text="收银员"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_pay_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="123"
+        android:gravity="center"
+        android:text="支付方式"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_order_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="123"
+        android:gravity="center"
+        android:text="合计"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_amount_paid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="123"
+        android:gravity="center"
+        android:text="实付金额"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_sync_type_order"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="136"
+        android:gravity="center"
+        android:text="同步情况"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4" />
+
+    <TextView
+        android:id="@+id/id_ps_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="123"
+        android:gravity="center"
+        android:text="配送方式"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/id_ps_type_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4B4"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/id_order_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="230"
+        android:gravity="center"
+        android:text="下单时间"
+        android:textColor="#FF282828"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

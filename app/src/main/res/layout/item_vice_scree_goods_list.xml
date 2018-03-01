@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="-1dp"
+    android:layout_marginRight="-1dp"
+    android:background="@drawable/shape_rectangle_radius_e3e3e3">
+
+    <TextView
+        android:id="@+id/id_line_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="97"
+        android:gravity="center"
+        android:text="编号"
+        android:textColor="#FF282828"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/id_product_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="259"
+        android:gravity="center"
+        android:text="商品"
+        android:textColor="#FF282828"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/id_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="172"
+        android:gravity="center"
+        android:text="数量"
+        android:textColor="#FF282828"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/id_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="153"
+        android:gravity="center"
+        android:text="单价"
+        android:textColor="#FF282828"
+        android:textSize="12sp" />
+</LinearLayout>

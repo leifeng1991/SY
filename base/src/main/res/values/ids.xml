@@ -1,0 +1,13 @@
+<resources>
+    <item name="meImageView_1" type="id" />
+    <item name="meText_1" type="id" />
+    <item name="meText_2" type="id" />
+    <item name="iv_classify_top_item" type="id" />
+    <item name="tv_classify_top_item" type="id" />
+    <item name="iv_classify_top_item_right" type="id" />
+    <item name="meRelativeLayout" type="id" />
+    <item name="meImage" type="id" />
+    <item name="meNumberMessageTextView" type="id" />
+    <item name="meText" type="id" />
+
+</resources>

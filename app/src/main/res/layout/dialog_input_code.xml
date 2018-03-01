@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vg_number_layout"
+    android:layout_width="520dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:contentPadding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/id_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FF282828"
+                    android:textSize="@dimen/text_size_24"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/id_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_stroke_b4b4b4"
+                    android:inputType="numberDecimal"
+                    android:padding="17dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FFB6B6B6"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_num_1"
+                        style="@style/NumButton_2"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/btn_num_4"
+                        style="@style/NumButton_2"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/btn_num_7"
+                        style="@style/NumButton_2"
+                        android:text="7" />
+
+                    <Button
+                        android:id="@+id/btn_num_0"
+                        style="@style/NumButton_2"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_num_2"
+                        style="@style/NumButton_2"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/btn_num_5"
+                        style="@style/NumButton_2"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/btn_num_8"
+                        style="@style/NumButton_2"
+                        android:text="8" />
+
+                    <Button
+                        android:id="@+id/btn_num_00"
+                        style="@style/NumButton_2"
+                        android:text="00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_num_3"
+                        style="@style/NumButton_2"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/btn_num_6"
+                        style="@style/NumButton_2"
+                        android:text="6" />
+
+                    <Button
+                        android:id="@+id/btn_num_9"
+                        style="@style/NumButton_2"
+                        android:text="9" />
+
+                    <Button
+                        android:id="@+id/btn_num_dot"
+                        style="@style/NumButton_2"
+                        android:text="." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_num_delete"
+                        style="@style/NumButton_2"
+                        android:src="@mipmap/ic_keybroad_delete" />
+
+                    <Button
+                        android:id="@+id/btn_num_clear"
+                        style="@style/NumButton_2"
+                        android:text="清空"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <Button
+                        android:id="@+id/btn_num_config"
+                        style="@style/NumButton_2"
+                        android:layout_weight="2.1"
+                        android:background="@drawable/shape_rectangle_solid_ff725c"
+                        android:text="确认"
+                        android:textSize="@dimen/text_size_24" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/id_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@mipmap/ic_white_close" />
+</RelativeLayout>

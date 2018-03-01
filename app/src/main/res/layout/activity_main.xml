@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_equipment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="设备编号：10001"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="2017-12-05  15:30:00"
+        android:textColor="#FF505050"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/id_sales_cashier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_sales_cashier" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销售收银"
+                android:textColor="#FFFF725C"
+                android:textSize="@dimen/text_size_32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_commodity_management"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_commodity_management" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品管理"
+                android:textColor="#FFFF725C"
+                android:textSize="@dimen/text_size_32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_order_management"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_order_management" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单管理"
+                android:textColor="#FFFF725C"
+                android:textSize="@dimen/text_size_32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_goods_weighing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_goods_weighing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品称重"
+                android:textColor="#FFFF725C"
+                android:textSize="@dimen/text_size_32" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_select_print_devices"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape_rectangle_stroke_b4b4b4"
+            android:text="打印设备"
+            android:textColor="#FF4F4F4F"
+            android:textSize="@dimen/text_size_22" />
+
+        <Button
+            android:id="@+id/id_log_out"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_rectangle_stroke_b4b4b4"
+            android:text="退出登录"
+            android:textColor="#FF4F4F4F"
+            android:textSize="@dimen/text_size_22" />
+
+        <Button
+            android:id="@+id/id_change_password"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_rectangle_stroke_b4b4b4"
+            android:text="修改密码"
+            android:textColor="#FF4F4F4F"
+            android:textSize="@dimen/text_size_22" />
+    </LinearLayout>
+</RelativeLayout>
